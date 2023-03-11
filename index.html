@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dados usuário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Preencha com <br>seus dados</h2>
+        </div>
+
+        <form action="base.php" method="post">
+            <label for="">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite seu nome...">
+
+            <label for="">Nome: </label>
+            <input type="email" name="email" placeholder="Digite seu email...">
+
+            <label for="">Telefone: </label>
+            <input type="text" name="telefone" id="telefone" required placeholder="(99) 99999-9999">
+
+            <label for="">Sobre você: </label>
+            <textarea name="sobre" id="sobre" cols="15" rows="3"></textarea>
+
+            <label for="">Experiência 1: </label>
+            <input type="text" name="experiencia1" id="">
+
+            <label for="">Experiência 2: </label>
+            <input type="text" name="experiencia2" id="">
+
+            <input type="submit" id="btn" value="Gerar">
+
+        </form>
+    </div>
+
+    <script>
+        $('#telefone').mask('(00) 00000-0000');
+    </script>
+
+
+</body>
+
+</html>
